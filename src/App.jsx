@@ -69,6 +69,7 @@ export default function App() {
                       {
                         index < accordionList.length - 1 && (
                           <button 
+                            disabled={index !== unlockedIndex}
                             onClick={() => unloackNext()}
                             className={`unlock-btn ${index === unlockedIndex ? "unlock-btn-color" : "unlock-btn-color2"}`}
                           >
